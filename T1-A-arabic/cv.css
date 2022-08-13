@@ -131,7 +131,7 @@ font-size: 35px;
   }
   
   .tables  td:nth-child(odd) {
-    text-align: right;
+    text-align: left;
     width:20%;
   }
   .tables  td:nth-child(even) {
