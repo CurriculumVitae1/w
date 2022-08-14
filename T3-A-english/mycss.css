@@ -104,7 +104,9 @@ color:#5d7df1 !important;
   position: absolute;
   background-color: #5d7df1;
 }
-
+.section-header h2::after {
+  background: #FF4401;
+}
 
 
 
