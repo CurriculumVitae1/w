@@ -1,0 +1,81 @@
+.bi-camera::before {
+    content: "\f422";
+}
+.c{
+    background-color: rgba(85, 85, 85, 0.525);
+    padding-left: 10px;
+    border-radius: 2px;
+    color: var(--color-primary);
+}
+.date{
+    color: rgba(180, 180, 180, 0.699);
+    font-size: 15px;
+}
+.u{
+    color: rgba(70, 147, 223, 0.872);
+    font-size: 15px;
+}
+.py-5 {
+    padding-top: 0rem!important;
+    padding-bottom: 0rem!important;
+}
+.Education{font-size: 25px;
+    padding-bottom: 18px; 
+    margin-top: 10px;
+    text-align: center;}
+
+    .date{
+        font-size: 12px;
+        color: #767171;
+        font-weight: bold;
+        text-align: start;
+        margin: auto;
+      }
+      .Font{
+        font-size: 13px;
+        color: white;
+        font-weight:650 ;
+      }
+
+  .progress{
+    display: inline-flex;
+     width: 70%;
+    --bs-progress-height: 10px;
+    --bs-progress-bar-bg: var(--color-primary);
+    --bs-progress-bg: #e3e3e4;
+    margin-left: 5px;
+
+  }
+  .tables {
+    width: 50%;
+    font-size: 12px;
+    margin: auto;
+  }
+  
+  .tables td {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 7px;
+  }
+  
+  .tables  td:nth-child(odd) {
+    text-align: right;
+    width:20%;
+  }
+.body_skills{
+    padding-top: 100px;
+}
+.divskills{
+    margin:auto;
+    width:30% ;
+    padding: 20px;
+    text-align: center;
+}
+.page-header {
+  padding-bottom: 30px;
+}
+  @media screen and (max-width: 700px) {
+    .tables{width: 100%;}
+    .divskills{width: 100%;}
+}
+  
