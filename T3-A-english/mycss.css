@@ -2,7 +2,7 @@
     content: "\f422";
 }
 .c{
-    background-color: rgba(85, 85, 85, 0.525);
+    background-color: rgb(99 61 61 / 53%);
     padding-left: 10px;
     border-radius: 2px;
     color: var(--color-primary);
