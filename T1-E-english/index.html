@@ -16,12 +16,6 @@
 </head>
 
 <body >
-  <button style="position: fixed;border-radius: 10px; bottom: 20px; right: 20px;
-  border-color: rgba(0, 0, 0, 0.418); color: rgb(46, 43, 97); border: 0px; padding: 8px;"
-   onclick="myf()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-  </svg> pdf</button>
   <div class="contener" id="mybody" >
        <div class="divName"><span class="Name">FirstName LastName</span>
        <a href="tel:+961696354321" class="Phone">+961 696354321</a>
@@ -192,12 +186,18 @@
     <script src="myjs.js" ></script>
 
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-   <script src="html2pdf.bundle.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <!-- <script src="html2pdf.bundle.js"></script> -->
+   <button style="position: fixed;border-radius: 10px; bottom: 20px; right: 20px;
+   border-color: rgba(0, 0, 0, 0.418); color: rgb(46, 43, 97); border: 0px; padding: 8px;"
+    onclick="myf()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+   </svg> pdf</button> 
    <script>
         function myf(){
         var element = document.getElementById('mybody');
-        element.style.width ='900px';
+       
         element.style.height ='2000px';
         element.style.marginTop ='0px';
         var opt = {
@@ -208,12 +208,9 @@
         jsPDF: { unit: "in", format: "tabloid", orientation: "portrait"}
          };
         html2pdf().set(opt).from(element).save(); 
-        setTimeout(function(){
-        window.location.reload(1);
-        }, 5000);
-        }
       
-        </script>
+        } 
+     </script>
 
   
 </body>
