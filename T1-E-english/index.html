@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,19 @@
     <meta name="keyword" content="T1-A-English">
     <link rel="icon" href="image/iconCV.png">
     <title>T1-A-English</title>
+
+
+
 </head>
-<body>
-  <div class="contener">
+
+<body >
+  <button style="position: fixed;border-radius: 10px; bottom: 20px; right: 20px;
+  border-color: rgba(0, 0, 0, 0.418); color: rgb(46, 43, 97); border: 0px; padding: 8px;"
+   onclick="myf()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+  </svg> download pdf</button>
+  <div class="contener" id="mybody" >
        <div class="divName"><span class="Name">FirstName LastName</span>
        <a href="tel:+961696354321" class="Phone">+961 696354321</a>
        <a class="Email" href = "mailto: ibc2.com">ibc2@gmail.com</a>
@@ -29,7 +40,7 @@
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 divPersonalInformation" >
              <h4 class="header">Personal Information</h4>
-             <table class="mtable Font">
+             <table class="mtable Font" >
              <ul>
                 <tr><td><li>Date Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : 10 June 2000</li>
                 <tr><td><li>Nationality  &nbsp;&nbsp;&nbsp;  : Jordanian</li>
@@ -172,13 +183,38 @@
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
         </svg>
       </a>
+      
     </div>
     </div>
-
-   
+        
     <script src="bootstrap/jquery-3.6.0.min.js" ></script>
      <script src="bootstrap/bootstrap.min.js" ></script>
     <script src="myjs.js" ></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- <script src="html2pdf.bundle.js"></script> -->
+   <script>
+        function myf(){
+        var element = document.getElementById('mybody');
+        element.style.width ='900px';
+        element.style.height ='2000px';
+        element.style.marginTop ='-340px';
+        var opt = {
+        margin: 0,
+        filename: "YourName.pdf",
+        image: { type: "jpeg", quality: 0.98 },
+        html2canvas: { scale: 3 },
+        jsPDF: { unit: "in", format: "tabloid", orientation: "portrait"}
+         };
+        html2pdf().set(opt).from(element).save(); 
+        setTimeout(function(){
+        window.location.reload(1);
+        }, 5000);
+        }
+      
+        </script>
+
   
 </body>
 </html>
