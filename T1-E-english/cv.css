@@ -200,9 +200,12 @@ font-size: 35px;
   .myCourses{margin-top: -50px;}
   .myTechnical{margin-top: -30px;}
 
-  @media screen and (max-width: 990px) {
-  .divName {width: 50%;}};
-      @media screen and (max-width: 768px) {
+ 
+ 
+       @media (min-width:769px)and ( max-width: 990px){
+       .divName {width: 60%;}
+        }
+      @media (max-width: 768px) {
         .contener{width: 100%;}
         .divCv{width: 100%;}
         .divImage{order: 1;}
@@ -214,6 +217,8 @@ font-size: 35px;
         .myTechnical{margin-top: 0px;}
         .divName {width: 90%;}
       }  
+
+    
      /*  .con{
         width: 40px;
         top: 230px;
