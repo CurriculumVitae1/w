@@ -12,16 +12,6 @@ body{
     margin: auto;
 }
 
-.divName{
-background-color: #333F50;
-margin: auto;
-padding-top: 50px;
-width: 100%;
-padding-bottom: 15px;
-text-align: center;
-font-size: 30px;
-font-weight: bold;
-}
 .Name{
 color: #C45911;
 font-size: 35px;
@@ -152,7 +142,14 @@ font-size: 35px;
     border-radius: 0px  70px 70px 0px;
     padding-top: 15px;
     margin: initial;
-    width: 30%;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 30px; 
+    font-weight: bold;
+    text-align: start;
+    padding-left: 20px;
+
   }
   .Name{
     color :#BFBCB5;
@@ -164,11 +161,11 @@ font-size: 35px;
   .Phone{
     color :#BFBCB5;
     text-align: start;
-    padding-left: 20px;
+    width: 100%;
   }
   .Email{
     text-align: start;
-    padding-left: 20px;
+    width: 100%;
   }
   .Phone:hover{
     color :#424f57;
@@ -213,7 +210,7 @@ font-size: 35px;
      
         .myCourses{margin-top: 0px;}
         .myTechnical{margin-top: 0px;}
-        .divName {width: 80%;}
+        .divName {width: 90%;}
       }  
      /*  .con{
         width: 40px;
