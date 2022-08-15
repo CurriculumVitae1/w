@@ -200,6 +200,8 @@ font-size: 35px;
   .myCourses{margin-top: -50px;}
   .myTechnical{margin-top: -30px;}
 
+  @media screen and (max-width: 990px) {
+  .divName {width: 50%;}};
       @media screen and (max-width: 768px) {
         .contener{width: 100%;}
         .divCv{width: 100%;}
