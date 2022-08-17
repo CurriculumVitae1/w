@@ -8,7 +8,7 @@ body{
 .contener{
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 
@@ -160,8 +160,10 @@ font-size: 35px;
     color: #ffffff;
     background-color: #0D334B;
     border-radius: 3px;
-    padding: 3px;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px ;
+    padding-bottom: 3px;
+    width: fit-content;
    }
    .progress{
     --bs-progress-bar-bg: #0D334B;
