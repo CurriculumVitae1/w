@@ -136,6 +136,23 @@ body{
   background: #9bc2d6;
 }
 
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  border :1px solid #1c1f2b;
+  background:#e0e0e1a8; 
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #115683; 
+  /* here */
+  border :1px solid #ffffff;
+ 
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#363a4c; 
+}
   @media screen and (max-width: 700px) {
     .tables{width: 100%;}
     .divskills{width: 100%;}

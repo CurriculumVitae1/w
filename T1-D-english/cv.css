@@ -13,7 +13,7 @@ body{
 }
 
 .divName{
-background-color: #333F50;
+
 margin: auto;
 padding-top: 50px;
 width: 100%;
@@ -28,7 +28,7 @@ font-size: 35px;
 }
 .Phone{
  font-size:20px ;
- color: white;
+ color: #FCF8E8;
  text-decoration: none;
  display: block;
 }
@@ -63,6 +63,7 @@ font-size: 35px;
       .header{
         color: #C45911;
         font-weight: bold;
+        
       }
      
       .mtable, td, th {
@@ -148,18 +149,18 @@ font-size: 35px;
 
   /* StartThemes */
   .divName {
-    background-color: #FFCA12;
+    background-color: #15202B;
     border-radius: 0px  0px 30px 30px;
     padding-top: 15px;
   }
   .Name{
-    color :#0D334B;
+    color :#FCF8E8;
   }
   .img {
     border: 4px solid #0D334B;
   }
   .Phone{
-    color :#0D334B;
+    color :#FCF8E8;;
   }
   .Phone:hover{
     color :#424f57;
@@ -168,22 +169,27 @@ font-size: 35px;
     color :#354a57;
   }
    .header{
-    color: #FFCA12;
+    color: #15202B;
+    font-weight: bold;
+    width: fit-content;
+    background-color: #FCF8E8;
+    border-radius: 20px;
+    padding:0px 10px  5px 10px;
    }
    .progress{
     --bs-progress-bar-bg: #1c4762;
   }
   .contener{
     width: 100%;
-    background-color:  #18181B;
+    background-color:  #15202B;
   }
   .divCv{
-  background-color:  #18181B;
+  background-color:  #15202B;
   color: white;
   }
   .Font,.links{
     font-size: 13px;
-    color: #e0e0e0;
+    color: #FCF8E8;
     font-weight: 500;
 }
 .tables  td:nth-child(odd) {

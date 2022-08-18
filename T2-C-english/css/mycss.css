@@ -72,6 +72,23 @@ h6{
     background-color: #364F6B
 }
 
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  ::-webkit-scrollbar-track {
+    border :1px solid #1c1f2b;
+    background:#e0e0e1a8; 
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #364F6B; 
+    /* here */
+    border :1px solid #ffffff;
+   
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background:#363a4c; 
+  }
 @media screen and (max-width: 700px) {
     .EFont{  font-size: 20px;}
 }
